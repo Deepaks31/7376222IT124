@@ -6,11 +6,10 @@
     <input type="number" name="num1" id="num1" required><br><br>
     <label for="num2">Number 2:</label>
     <input type="number" name="num2" id="num2" required><br><br>
-    <button type="submit">Calculate Average</button>
+    <button type="submit">Calculate</button>
 </form>
-<br>
-
-{% if average %}
-    <h2>Average: {{ average }}</h2>
+</br>
+{% if result %}
+    <h2>Result: {{ result }}</h2>
 {% endif %}
-{% endblock content %}
+{% endblock %}
